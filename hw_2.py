@@ -5,14 +5,18 @@ print(result)
 
 # exersice №2
 
-some_list2 = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
-some_list3 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
-result = list(set(some_list2) and set(some_list3))
-print(result)
+ab = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+ba = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+
+common_elements = [number for number in ab if number in ba]
+
+print(common_elements)
 
 # exersice №3
 
-some_list4 = [6, 6, 2, 1, 5, 8, 13, 21, 34, 55, 89]
-some_list5 = [1, 18, 3, 4, 5, 9, 7, 8, 9, 10, 11, 12, 13]
-result = list(set(some_list4 + some_list5))
-print(result)
+arr = [6, 6, 2, 1, 5, 8, 13, 21, 34, 55, 89]
+bar = [1, 18, 3, 4, 5, 9, 7, 8, 9, 10, 11, 12, 13]
+
+unique_elements = list(set(number for number in arr if number in bar))
+
+print(unique_elements)
