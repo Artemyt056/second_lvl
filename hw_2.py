@@ -14,9 +14,17 @@ print(common_elements)
 
 # exersice №3
 
-arr = [6, 6, 2, 1, 5, 8, 13, 21, 34, 55, 89]
-bar = [1, 18, 3, 4, 5, 9, 7, 8, 9, 10, 11, 12, 13]
+arr = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
 
-unique_elements = list(set(number for number in arr if number in bar))
+bar = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
 
-print(unique_elements)
+c = []
+
+for i in range(len(arr)):
+
+    for j in range(len(bar)):
+
+        if not arr[i] == bar[j]:
+            c.append(arr[i])
+
+print(list(set(sorted(c))))
