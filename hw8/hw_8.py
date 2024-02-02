@@ -55,7 +55,7 @@ def main():
 
     with open('output.txt', 'w', encoding='utf-8') as out_file:
         out_file.write(result)
-        out_file.write('\n\nСаме коротке слово, яке встречається найчастіше: {}\n'.format(most_common_short_word))
+        out_file.write('\n\nСаме коротке слово, яке встречається найчастіш: {}\n'.format(most_common_short_word))
         out_file.write(result_text)
 
 
